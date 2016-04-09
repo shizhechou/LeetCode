@@ -1,4 +1,4 @@
-package algorithm.InvertBinaryTree;
+package algorithm.InvertBinaryTree.java;
 
 import algorithm.TreeNode;
 
