@@ -47,5 +47,9 @@ public class TreeNode {
 		}
 		System.out.println();
 	}
+	
+	public void printTreeNodeValue(){
+		System.out.println(this.val);
+	}
 
 }

@@ -2,8 +2,6 @@ package algorithm.MajorityElement.java;
 
 import java.util.Arrays;
 
-import algorithm.TreeNode;
-
 public class MajorityElement {
 	public static int majorityElement(int[] nums) {
         Arrays.sort(nums);
