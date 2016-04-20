@@ -14,17 +14,17 @@ public class ListNode {
 	ListNode(int x) {
 		val = x;
 	}
-	
+
 	public static ListNode build(Integer[] data) {
 		ListNode result = null;
 		ListNode current = null;
-		
-		for(int i : data){
+
+		for (int i : data) {
 			ListNode node = new ListNode(i);
-			if(result == null){
+			if (result == null) {
 				result = node;
 				current = result;
-			}else{
+			} else {
 				ListNode tmp = new ListNode(i);
 				current.next = tmp;
 				current = tmp;
@@ -33,23 +33,23 @@ public class ListNode {
 		}
 		return result;
 	}
-	
-	public static ListNode getListNode(ListNode first, int pos){
-		if(pos >= first.length){
+
+	public static ListNode getListNode(ListNode first, int pos) {
+		if (pos >= first.length) {
 			return null;
 		}
-		
+
 		ListNode result = first;
-		for(int i=1;i<pos;i++){
+		for (int i = 1; i < pos; i++) {
 			result = result.next;
 		}
 		return result;
 	}
-	
-	private int getListNodeLength(ListNode first){
+
+	private int getListNodeLength(ListNode first) {
 		return first.length;
 	}
-	
+
 	public void print() {
 		Queue<ListNode> queue = new ArrayDeque<ListNode>();
 		queue.add(this);
@@ -59,7 +59,9 @@ public class ListNode {
 				queue.add(node.next);
 			}
 
-			System.out.print(node.val + " ");
+			System.out.print(node.val);
+			if (!queue.isEmpty())
+				System.out.print(" -> ");
 		}
 		System.out.println();
 	}
