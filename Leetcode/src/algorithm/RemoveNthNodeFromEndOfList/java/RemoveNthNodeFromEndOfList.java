@@ -1,8 +1,8 @@
 package algorithm.RemoveNthNodeFromEndOfList.java;
 
+import algorithm.ListNode;
 
-
-public class algorithm.RemoveNthNodeFromEndOfList {
+public class RemoveNthNodeFromEndOfList {
 	public ListNode removeNthFromEnd(ListNode head, int n) {
         	ListNode fast = head;
         	ListNode slow = head;
