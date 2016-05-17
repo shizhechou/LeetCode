@@ -1,4 +1,4 @@
-package algorithm.WorldPattern.java;
+package algorithm.WordPattern.java;
 
 import java.util.HashMap;
 import java.util.Map;
